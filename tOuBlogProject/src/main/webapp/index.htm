@@ -1,0 +1,47 @@
+
+	
+------------- 2018.04.02(화)----------------------
+ 1. Spring Security에서 in-memory 방식이 아니라 데이터베이스를 이용한 로그인 처리
+ 
+ p 683, p 684
+ p 690, p 693 표 16.4
+ 
+ 1. MyBatis
+  ㄱ. pom.xml에 추가하기
+  	<!-- MyBatis 관련 p.563 -->
+		<dependency>
+	    	<groupId>org.mybatis</groupId>
+	    	<artifactId>mybatis</artifactId>
+	    	<version>3.2.5</version>
+		</dependency>
+		<dependency>
+	    	<groupId>org.mybatis</groupId>
+	    	<artifactId>mybatis-spring</artifactId>
+	    	<version>1.2.3</version>
+		</dependency>
+  ㄴ. mapperLacations 속성의 value 값으로 매퍼파일 추가 p.564
+  	<!-- Mybatis 사용하기 위한 빈 객체 설정 부분 -->
+	   <bean id="sqlSessionFactory"
+	      class="org.mybatis.spring.SqlSessionFactoryBean">
+	      <property name="dataSource" ref="dataSource" ></property>
+	      <!-- <property name="mapperLocations" value="classpath:com.newlecture.web.newlecture.dao/mapper/*.xml"></property> -->
+	      <property name="mapperLocations">
+	       <list>
+	        <value>classpath:com/newlecture/web/dao/mapper/*.xml</value>
+	       </list>
+	      </property>
+	   </bean>
+	   <bean id="sqlSession"
+	    class="org.mybatis.spring.SqlSessionTemplate">
+	      <constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>
+	   </bean>
+  ㄷ. mapper 폴더 안에 NLNoticeDao.xml 파일 추가
+ 	<mapper namespace="com.newlecture.web.dao.NoticeDao">
+
+ ㄹ. CustomerController 컨트롤러에서
+	 @Autowired로  SqlSession 주입 받아서 DAO구현
+	 NoticeDao m_dao = sqlSession.getMapper()
+	 m_dao.getNotices를 사용해서 게시글 목록 가져옴 
+	 =>NLNoticeDai.java 파일이 필요없게 됨
+	 
+ 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <!-- namespace 클래스의 인터페이스 정보를 지정한다 -->
+  <!-- 
+  #{param1} : 전달된 파라미터 값을 자료형에 맞게 변환하는 작업까지 해줌
+  ${param2} : 전달된 파라미터 값(String)을 그대로 변환 처리해줌
+   -->
+<mapper namespace="com.newlecture.web.dao.NoticeDao">
+<!-- 
+ <select id="getCount" resultType="Integer">
+  SELECT COUNT(*) CNT FROM NOTICES WHERE ${param1} LIKE '%${param2}%'	
+ </select>
+ <select id="getNotices" resultType="com.newlecture.web.vo.Notice">
+  SELECT * FROM 
+  (
+  SELECT ROWNUM NUM, N.* 
+  FROM (
+  		SELECT * 
+  		FROM NOTICES 
+  		WHERE ${param2}  LIKE '%${param3}%'
+  		ORDER BY REGDATE DESC
+  		) N
+  	)
+  WHERE NUM BETWEEN 1 + (#{param1}-1)*15 AND 15 + (#{param1}-1)*15
+ </select>
+ <select id="getNotice" resultType="com.newlecture.web.vo.Notice">
+ 	SELECT * 
+ 	FROM NOTICES 
+ 	WHERE SEQ=#{seq}
+ </select>
+ <delete id="delete">
+ 	DELETE NOTICES WHERE SEQ = #{seq}
+ </delete>
+ <update id="update">
+ 	UPDATE NOTICES 
+ 	SET TITLE=#{title}, CONTENT=#{content}, FILESRC=#{fileSrc} 
+ 	WHERE SEQ=#{seq}
+ </update>
+ <insert id="insert">
+ 	<selectKey order="BEFORE" keyProperty="seq" resultType="String">
+ 		SELECT MAX(TO_NUMBER(SEQ))+1 FROM NOTICES
+ 	</selectKey>
+ 	INSERT INTO NOTICES
+ 		(SEQ, TITLE, CONTENT, WRITER, REGDATE, HIT, FILESRC) 
+ 	VALUES
+ 		( #{seq}, #{title}, #{content}, #{writer}, SYSDATE, 0, #{fileSrc} )
+ </insert>
+  -->
+</mapper>
+
+
+
+
+
+
+
