@@ -15,7 +15,6 @@
 #main{
 	background: white;	
 	border-top: solid 1px;
-	border-bottom: solid 1px;
 	margin-left: 10%;
 	margin-right:10%;
 }
