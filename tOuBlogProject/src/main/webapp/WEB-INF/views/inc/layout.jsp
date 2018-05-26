@@ -63,7 +63,9 @@ article, aside, canvas, details, figcaption, figure, footer, header,
 	hgroup, main, menu, nav, section, summary {
 	display: block;
 }
-
+.bio-recently a:hover img {
+    opacity: 0.7;
+}
 .home .content {
 	margin: 3em auto;
 }

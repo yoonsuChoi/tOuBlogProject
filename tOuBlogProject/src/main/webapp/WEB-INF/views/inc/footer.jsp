@@ -110,12 +110,12 @@ footer.nb-footer .copyright p {
 
 						<div class="social-media">
 							<ul class="list-inline">
-								<li><a href="https://github.com/yoonsuChoi/tOuBlogProject" title="github"><i
+								<li><a href="https://github.com/yoonsuChoi/tOuBlogProject" target="_blank" title="github"><i
 										class="fa"><img src="${pageContext.request.contextPath }/images/github.png" alt="github" style="width: 100%" title="github" /> </i></a></li>
-								<li><a href="http://www.nextbootstrap.com/" title="mail"><i
+								<li><a href="http://www.nextbootstrap.com/" title="mail" target="_blank"> <i
 										class="fa "><img src="${pageContext.request.contextPath }/images/gmail.png" alt="gmail" style="width: 100%;" title="mail"/></i></a></li>
-								<li><a href="http://www.nextbootstrap.com/" title="message"><i
-										class="fa "><img src="${pageContext.request.contextPath }/images/message.png" alt="github" style="width: 86%; margin-top: 9px;" title="message" /></i></a></li>
+								<li><a href="http://www.nextbootstrap.com/" title="mail" target="_blank"> <i
+										class="fa "><img src="${pageContext.request.contextPath }/images/gmail.png" alt="gmail" style="width: 100%;" title="mail"/></i></a></li>
 								
 							</ul>
 						</div>
