@@ -17,8 +17,9 @@
 
 <style>
 footer.nb-footer {
-	background: #222;
-	border-top: 4px solid #b78c33;
+	background: white;
+	border-top: 0.063rem solid rgba(0,0,0,0.2);
+	margin-top:10%;
 }
 
 footer.nb-footer .about {
@@ -109,7 +110,7 @@ footer.nb-footer .copyright p {
 
 						<div class="social-media">
 							<ul class="list-inline">
-								<li><a href="http://www.nextbootstrap.com/" title="github"><i
+								<li><a href="https://github.com/yoonsuChoi/tOuBlogProject" title="github"><i
 										class="fa"><img src="${pageContext.request.contextPath }/images/github.png" alt="github" style="width: 100%" title="github" /> </i></a></li>
 								<li><a href="http://www.nextbootstrap.com/" title="mail"><i
 										class="fa "><img src="${pageContext.request.contextPath }/images/gmail.png" alt="gmail" style="width: 100%;" title="mail"/></i></a></li>
