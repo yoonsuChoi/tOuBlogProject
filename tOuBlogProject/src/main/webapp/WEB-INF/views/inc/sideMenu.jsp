@@ -8,7 +8,9 @@
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<link type="text/css" href="${pageContext.request.contextPath }/sideMenu.css" rel="stylesheet" />
+<link type="text/css"
+	href="${pageContext.request.contextPath }/sideMenu.css"
+	rel="stylesheet" />
 
 <script>
 	$(document)
@@ -66,10 +68,8 @@
 						$('.closeBtn').click(function() {
 							$('.modal').removeClass('show');
 							$('.modal').addClass('fade');
-							
-							trigger.removeClass('is-open');
-							trigger.addClass('is-closed');
-							trigger.css('margin-left','20px');	
+
+							trigger.css('margin-left', '20px');
 							$('#wrapper').removeClass('toggled');
 							$('.overlay').css('display', 'none');
 							overlay.hide();
@@ -77,7 +77,24 @@
 							trigger.addClass('is-closed');
 							isClosed = false;
 						});
+						
+						// modal창 이외에 다른곳 클릭시 modal창 hide
+						$('html').click(function (){
+							if($('.modal').hasClass('show')){
+								$('.modal').removeClass('show');
+								$('.modal').addClass('fade');
 
+								trigger.css('margin-left', '20px');
+								$('#wrapper').removeClass('toggled');
+								$('.overlay').css('display', 'none');
+								overlay.hide();
+								trigger.removeClass('is-open');
+								trigger.addClass('is-closed');
+								isClosed = false;
+							}
+						})
+						
+						
 					});
 </script>
 <div id="wrapper">
@@ -119,14 +136,14 @@
 
 	</div>
 	<!-- /#wrapper -->
-	
 
-	<div class="modal fade">
+
+	<div class="modal fade" id="modal">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close closeBtn" data-dismiss="modal"
-						aria-label="Close" style="color:#333333;">
+						aria-label="Close" style="color: #333333;">
 						<span aria-hidden="true">&times;</span>
 					</button>
 					<h4 class="modal-title">Info</h4>
