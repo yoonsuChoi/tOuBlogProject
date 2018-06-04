@@ -9,28 +9,28 @@
 }
 
 #header {
-	border: solid 1px gray;
 	width: 100%;
 	height: 100%;
 }
 
+#headerStick{
+	width:100%;
+	height: 38px;
+	background-color: black;
+}
 
 </style>
-
-
+ 
+ 
+<div id="headerStick">
+	
+</div>
 <div id="header">
 	<%-- <h1 id="logo" style="width: 100%; height:100%;">
 			<a href="${pageContext.request.contextPath }/index.htm"><img src="${pageContext.request.contextPath }/images/headerImage.jpg" alt="뉴렉처" /></a>
 		</h1> --%>
 	<h1 id="mainImage" style="width: 100%; height: 100%;">
 		<a href="${pageContext.request.contextPath }/index.htm"> <br>
-			<br> <br>
-			<div class="image">
-				header<br>
-				header<br>
-				header<br>
-				header<br>
-				header<br>
-			</div></a>
+			</a>
 	</h1>
 </div>

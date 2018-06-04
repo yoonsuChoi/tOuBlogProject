@@ -21,7 +21,7 @@
 </style>
 <body>
 	<!--  sideMenu -->
-	<tiles:insertAttribute name="sideMenu" />
+	<tiles:insertAttribute name="Menu" />
 	<!--  header -->
 	<tiles:insertAttribute name="header" />
 	

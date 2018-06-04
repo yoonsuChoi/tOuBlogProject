@@ -4,29 +4,25 @@
        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
 	<definition name="home.*" template="/WEB-INF/views/inc/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"/>
 		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp"/>	
 		<put-attribute name="content" value="/WEB-INF/views{1}.jsp"/>
-		<put-attribute name="sideMenu" value="/WEB-INF/views/inc/sideMenu.jsp"/>
+		<put-attribute name="Menu" value="/WEB-INF/views/inc/Menu.jsp"/>
 	</definition>
 		
 	<definition name="profile.*" template="/WEB-INF/views/content/inc/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"/>
 		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp"/>	
-		<put-attribute name="sideMenu" value="/WEB-INF/views/inc/sideMenu.jsp"/>
+		<put-attribute name="Menu" value="/WEB-INF/views/inc/Menu.jsp"/>
 		<put-attribute name="content" value="/WEB-INF/views/content/profile.jsp"/>
 	</definition>
 	
 	<definition name="project.*" template="/WEB-INF/views/project/inc/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"/>
 		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp"/>	
-		<put-attribute name="sideMenu" value="/WEB-INF/views/inc/sideMenu.jsp"/>
+		<put-attribute name="Menu" value="/WEB-INF/views/inc/Menu.jsp"/>
 		<put-attribute name="content" value="/WEB-INF/views/project/project.jsp"/>
 	 </definition>
 	<definition name="board.*" template="/WEB-INF/views/board/inc/layout.jsp">
-		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"/>
 		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp"/>	
-		<put-attribute name="sideMenu" value="/WEB-INF/views/inc/sideMenu.jsp"/>
+		<put-attribute name="Menu" value="/WEB-INF/views/inc/Menu.jsp"/>
 		<put-attribute name="content" value="/WEB-INF/views/board/board.jsp"/>
 	 </definition>
 	

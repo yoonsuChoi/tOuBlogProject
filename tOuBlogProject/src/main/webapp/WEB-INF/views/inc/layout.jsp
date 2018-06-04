@@ -210,12 +210,10 @@ a img {
 </style>
 <body>
 	<!--  sideMenu -->
-	<tiles:insertAttribute name="sideMenu" />
-	<!--  header -->
-	<tiles:insertAttribute name="header" />
+	<tiles:insertAttribute name="Menu" />
 
 	<div id="main">
-		<ul class="bio-recently col-2">
+		<ul class="bio-recently col-2" style="max-width: 100%;">
 			<li><span><a href="#"><img
 						alt="d" src="${pageContext.request.contextPath }/images/examImage.jpg"></a></span>
 				<p>
