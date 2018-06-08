@@ -25,8 +25,6 @@
 	<!--  header -->
 	<tiles:insertAttribute name="header" />
 	
-	<tiles:insertAttribute name="content"/>
-	
 	<!-- footer -->
 	<tiles:insertAttribute name="footer" />
 </body>

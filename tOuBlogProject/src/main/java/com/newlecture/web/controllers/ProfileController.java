@@ -12,6 +12,6 @@ public class ProfileController {
 	@RequestMapping(value= {"info.htm"}, method=RequestMethod.GET)
 	public String Profile() {
 		System.out.println("profile진입");
-		return "profile.info";
+		return "profile.info.htm";
 	}
 }

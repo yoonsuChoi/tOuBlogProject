@@ -8,10 +8,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8" style="background-color: #EAEAEA;">
 <head>
 <meta charset="utf-8">
-<title>tOu is : ..</title>
+<title>tOu is :: ..</title>
 <link rel="shortcut icon"
 	href="${pageContext.request.contextPath }/images/favicon.ico">
 </head>
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
 #main {
 	background: white;
@@ -212,6 +214,16 @@ a img {
 	margin-bottom: 0px;
 }
 </style>
+<script>
+	
+	$(document).ready(function() {
+		var currenturl = $(location).attr('href');
+		
+		if(currenturl=="http://localhost:8081/web/"){
+			$('#home').addClass('active');
+		}
+	});
+</script>
 <body>
 	<div id="BigBody">
 		<div id="middleBody" >

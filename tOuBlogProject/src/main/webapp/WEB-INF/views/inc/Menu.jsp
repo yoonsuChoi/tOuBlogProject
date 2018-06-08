@@ -16,14 +16,13 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover 	{
 	color: #3B00DB;
 	text-decoration: underline;
 }
 
 .active {
-	color: red;
-	text-decoration: underline;
+	color: red !important;
 }
 
 
@@ -56,10 +55,10 @@ a:hover {
 		<div id="TopMenu">
 			<ul class="nav" role="tablist"
 				style="float: right; margin-bottom: 15px; width:100%;">
-				<li class="nav-item"><a class="nav-link active" href="#home"><b>Home</b></a></li>
-				<li class="nav-item"><a class="nav-link" href="#menu1"><b>Profile</b></a></li>
-				<li class="nav-item"><a class="nav-link" href="#menu2"><b>Project</b></a></li>
-				<li class="nav-item"><a class="nav-link" href="#menu2"><b>Info</b></a></li>
+				<li class="nav-item"><a class="nav-link" id="home" href="#home"><b>Home</b></a></li>
+				<li class="nav-item"><a class="nav-link" href="#menu1" id="profile"><b>Profile</b></a></li>
+				<li class="nav-item"><a class="nav-link" href="#menu2" id="project"><b>Project</b></a></li>
+				<li class="nav-item"><a class="nav-link" href="#menu2" id=""><b>Info</b></a></li>
 			</ul>
 		</div>
 
