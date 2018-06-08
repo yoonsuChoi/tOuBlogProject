@@ -5,10 +5,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="utf-8" style="background-color: #EAEAEA;">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>tOu의 개인블로그</title>
+<meta charset="utf-8">
+<title>tOu is : ..</title>
 <link rel="shortcut icon"
 	href="${pageContext.request.contextPath }/images/favicon.ico">
 </head>
@@ -37,7 +37,7 @@ ul {
 	border-bottom: 0.063rem solid rgba(0, 0, 0, 0.2);
 	margin-bottom: 4%;
 }
-	
+
 div {
 	padding: 0;
 }
@@ -63,9 +63,11 @@ article, aside, canvas, details, figcaption, figure, footer, header,
 	hgroup, main, menu, nav, section, summary {
 	display: block;
 }
+
 .bio-recently a:hover img {
-    opacity: 0.7;
+	opacity: 0.7;
 }
+
 .home .content {
 	margin: 3em auto;
 }
@@ -97,12 +99,14 @@ html, body {
 
 body {
 	color: #3a3a3a;
-	background: #fff;
+	background: #EAEAEA;
 	margin: 0;
 	font-family: "colfax-web", sans-serif;
 	font-weight: 400;
 	line-height: 1.65;
 	font-size: 106.3%;
+	margin-left:18% !important;
+	margin-right:18% !important;
 }
 /* @media all and (min-width:600px) */
 body {
@@ -153,7 +157,7 @@ p {
 }
 /* @media all and (min-width:600px) */
 .bio-recently li p {
-	width: 60%;
+	width: 70%;
 }
 /* @media all and (min-width:600px) */
 .home .content p {
@@ -209,54 +213,21 @@ a img {
 }
 </style>
 <body>
-	<!--  sideMenu -->
-	<tiles:insertAttribute name="Menu" />
+	<div id="BigBody">
+		<div id="middleBody" >
+			<!--  Menu -->
+			<tiles:insertAttribute name="Menu" />
+			<!-- main_Profile -->
+			<tiles:insertAttribute name="MainProfile" />
 
-	<div id="main">
-		<ul class="bio-recently col-2" style="max-width: 100%;">
-			<li><span><a href="#"><img
-						alt="d" src="${pageContext.request.contextPath }/images/examImage.jpg"></a></span>
-				<p>
-					Near and dear to our hearts, 
-					is a Paravel project designed to make it easy to find something
-					great to do and someplace great to go. Austin/Texas area private
-					beta out now.
-				</p></li>
-			<li><span><a href="#"><img
-						alt="c" src="${pageContext.request.contextPath }/images/examImage.jpg"></a></span>
-				<p>
-					We recently published two new 
-					posts. One for , and another one called 
-				</p></li>
-			<li><span><a href="#"><img
-						alt="b" src="${pageContext.request.contextPath }/images/examImage.jpg"></a></span>
-				<p>
-					We recently updated 
-					with some new portfolio items, talks, podcasts, interviews, and a
-					brand new home page graphic from 
-				</p></li>
-			<li><span><a
-					href="#"><img
-						alt="a"
-						src="${pageContext.request.contextPath }/images/examImage.jpg"></a></span>
-				<p>
-					summarizes how I view and approach building for the web.
-					My perception has been shaped while working on responsive,
-					component-based systems on a large-ish scale.
-				</p></li>
-			<li><span><a href="#"><img
-						alt="a" src="${pageContext.request.contextPath }/images/examImage.jpg"></a></span>
-				<p>
-					I was thrilled that  asked
-					me to contribute a theme to to
-					celebrate its recent responsive update. Read about the process 
-				</p></li>
-		</ul>
+			<!-- main_Project -->
+			<tiles:insertAttribute name="MainProject" />
+
+			<%-- <tiles:insertAttribute name="content" /> --%>
+
+			<!-- footer -->
+			<tiles:insertAttribute name="footer" />
+		</div>
 	</div>
-
-	<%-- <tiles:insertAttribute name="content" /> --%>
-
-	<!-- footer -->
-	<tiles:insertAttribute name="footer" />
 </body>
 </html>

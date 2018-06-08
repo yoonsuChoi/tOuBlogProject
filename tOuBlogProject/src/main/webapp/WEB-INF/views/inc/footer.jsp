@@ -95,6 +95,10 @@ footer.nb-footer .copyright p {
 	margin: 0;
 	padding: 0;
 }
+
+.li-inline{
+	display: inline-block;
+}
 </style>
 <body>
 	<footer class="nb-footer">
@@ -110,11 +114,11 @@ footer.nb-footer .copyright p {
 
 						<div class="social-media">
 							<ul class="list-inline">
-								<li><a href="https://github.com/yoonsuChoi/tOuBlogProject" target="_blank" title="github"><i
+								<li class="li-inline"><a href="https://github.com/yoonsuChoi/tOuBlogProject" target="_blank" title="github"><i
 										class="fa"><img src="${pageContext.request.contextPath }/images/github.png" alt="github" style="width: 100%" title="github" /> </i></a></li>
-								<li><a href="http://www.nextbootstrap.com/" title="mail" target="_blank"> <i
+								<li class="li-inline"><a href="http://www.nextbootstrap.com/" title="mail" target="_blank"> <i
 										class="fa "><img src="${pageContext.request.contextPath }/images/gmail.png" alt="gmail" style="width: 100%;" title="mail"/></i></a></li>
-								<li><a href="http://www.nextbootstrap.com/" title="mail" target="_blank"> <i
+								<li class="li-inline"><a href="http://www.nextbootstrap.com/" title="mail" target="_blank"> <i
 										class="fa "><img src="${pageContext.request.contextPath }/images/gmail.png" alt="gmail" style="width: 100%;" title="mail"/></i></a></li>
 								
 							</ul>

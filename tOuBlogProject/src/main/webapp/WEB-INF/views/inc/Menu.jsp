@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Bootstrap Example</title>
+
 <meta charset="utf-8">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -51,7 +48,7 @@ a:hover {
 <body>
 	<div id="headerStick"></div>
 	
-	<br><div class="container" style="max-width: 90%; margin-left: 10%;">
+	<br><div class="container" style="max-width: 90%; ">
 		<a href="http://localhost:8081/web/" style="text-decoration: none;"><h2>tOu
 				Infomation Blog</h2></a> <br>
 		<!-- Nav tabs -->

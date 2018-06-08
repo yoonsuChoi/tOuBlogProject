@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/trash/XXXsideMenu.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/home.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/views/inc/Menu.jsp=UTF-8
-encoding//src/main/webapp/WEB-INF/views/inc/sideMenu.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/main/m_profile.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/main/m_project.jsp=UTF-8
