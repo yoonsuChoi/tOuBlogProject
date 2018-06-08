@@ -237,9 +237,9 @@ a img {
 			<!-- main_Profile -->
 			<tiles:insertAttribute name="MainProfile" />
 			<div id="downloadBtn">
-				<button type="button" class="btn btn-outline-dark" style="font-size:12px;" onclick="window.location.href='${pageContext.request.contextPath }/files/resume.pdf'" >이력서 다운로드</button>
+				<button type="button" class="btn btn-outline-dark" style="font-size:12px;" onclick="window.location.href='${pageContext.request.contextPath }/files/resume.pdf'" >이력서 다운</button>
 				<button type="button" class="btn btn-outline-dark" style="font-size:12px;" onclick="window.location.href='${pageContext.request.contextPath }/files/project.docx'">포트폴리오
-					다운로드</button>
+					다운</button>
 				<!-- footer -->
 			</div>
 			<tiles:insertAttribute name="footer" />
