@@ -56,30 +56,38 @@ a:hover 	{
 			<ul class="nav" role="tablist"
 				style="float: right; margin-bottom: 15px; width:100%;">
 				<li class="nav-item"><a class="nav-link" id="home" href="#home"><b>Home</b></a></li>
-				<li class="nav-item"><a class="nav-link" href="#menu1" id="profile"><b>Profile</b></a></li>
-				<li class="nav-item"><a class="nav-link" href="#menu2" id="project"><b>Project</b></a></li>
-				<li class="nav-item"><a class="nav-link" href="#menu2" id=""><b>Info</b></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" id="profile"><b>Profile</b></a></li>
+				<li class="nav-item"><a class="nav-link"  id="project"><b>Project</b></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" id=""><b>Info</b></a></li>
 			</ul>
 		</div>
 
 	</div>
 	<script>
 		$(document).ready(function() {
-
 			$('.nav-link').click(function() {
 				$('.nav-link').removeClass('active');
 				$(this).addClass('active');
 			});
 			$(window).scroll(function() {
+
 				var height = $(document).scrollTop();
+				//305
 				// 168일때 상단바 고정
 				/* alert("navOffset = " + jbOffset);
 				alert("scroll = " + height); */
 				if (height >= 134) {
 					$('.nav').addClass('Fixed');
-				}else{
+				}
+				else{
 					$('.nav').removeClass('Fixed');
 				}
+			});
+			// 클릭시 해당 컨텐츠로 스크롤이동
+			$('#project').click(function (){
+				$("html").animate({
+					scrollTop: 305
+				}, 500);
 			});
 		});
 	</script>

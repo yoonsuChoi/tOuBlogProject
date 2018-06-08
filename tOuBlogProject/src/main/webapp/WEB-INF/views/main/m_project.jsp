@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <div id="main">
-<h5><b>Project : : </b></h5>
+<h5 id="projectScroll"><b>Project : : </b></h5>
 		<ul class="bio-recently col-2" style="max-width: 100%;">
 			<li><span><a href="#"><img
 						alt="d" src="${pageContext.request.contextPath }/images/examImage.jpg"></a></span>
