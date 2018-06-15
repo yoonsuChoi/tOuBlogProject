@@ -14,6 +14,8 @@
 		<put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp"/>	
 		<put-attribute name="MainProfile" value="/WEB-INF/views/main/m_profile.jsp"/>
 		<put-attribute name="Menu" value="/WEB-INF/views/inc/Menu.jsp"/>	
+		<put-attribute name="content" value="/WEB-INF/views/profile/profile.jsp"/>	
+		
 	</definition>
 	
 	<definition name="project.*" template="/WEB-INF/views/project/inc/layout.jsp">

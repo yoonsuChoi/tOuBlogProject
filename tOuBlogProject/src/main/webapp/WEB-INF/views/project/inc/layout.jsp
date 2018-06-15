@@ -9,14 +9,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>tOu의 개인블로그</title>
-<link rel="shortcut icon" href="${pageContext.request.contextPath }/images/favicon.ico">
+<link rel="shortcut icon"
+	href="${pageContext.request.contextPath }/images/favicon.ico">
+
+	<link rel="stylesheet"
+		href="${pageContext.request.contextPath }/layout.css" />
 </head>
 <style>
-#main{
-	background: white;	
+#main {
+	background: white;
 	border-top: solid 1px;
 	margin-left: 10%;
-	margin-right:10%;
+	margin-right: 10%;
 }
 </style>
 <body>
@@ -24,7 +28,7 @@
 	<tiles:insertAttribute name="Menu" />
 	<!--  header -->
 	<tiles:insertAttribute name="header" />
-	
+
 	<!-- footer -->
 	<tiles:insertAttribute name="footer" />
 </body>

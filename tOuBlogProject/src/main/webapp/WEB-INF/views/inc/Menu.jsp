@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover 	{
+a:hover {
 	color: #3B00DB;
 	text-decoration: underline;
 }
@@ -25,19 +25,18 @@ a:hover 	{
 	color: red !important;
 }
 
-
-
 .Fixed {
 	position: fixed;
 	top: 0px;
-	width: 100%;
+	width: 55%;
 	height: 50px;
 	background-color: white;
-	z-index:9999;
+	z-index: 8999;
 	opacity: 0.85;
 }
-#headerStick{
-	width:100%;
+
+#headerStick {
+	width: 100%;
 	height: 38px;
 	background-color: #111;
 	margin-bottom: 30px;
@@ -46,18 +45,19 @@ a:hover 	{
 </style>
 <body>
 	<div id="headerStick"></div>
-	
-	<br><div class="container" style="max-width: 90%; ">
+
+	<br>
+	<div class="container" style="max-width: 90%;">
 		<a href="http://localhost:8081/web/" style="text-decoration: none;"><h2>tOu
 				Infomation Blog</h2></a> <br>
 		<!-- Nav tabs -->
 
 		<div id="TopMenu">
 			<ul class="nav" role="tablist"
-				style="float: right; margin-bottom: 15px; width:100%;">
+				style=" margin-bottom: 15px;">
 				<li class="nav-item"><a class="nav-link" id="home" href="#home"><b>Home</b></a></li>
 				<li class="nav-item"><a class="nav-link" href="#" id="profile"><b>Profile</b></a></li>
-				<li class="nav-item"><a class="nav-link"  id="project"><b>Project</b></a></li>
+				<li class="nav-item"><a class="nav-link" href="#" id="project"><b>Project</b></a></li>
 				<li class="nav-item"><a class="nav-link" href="#" id=""><b>Info</b></a></li>
 			</ul>
 		</div>
@@ -72,22 +72,44 @@ a:hover 	{
 			$(window).scroll(function() {
 
 				var height = $(document).scrollTop();
+
 				//305
 				// 168일때 상단바 고정
 				/* alert("navOffset = " + jbOffset);
 				alert("scroll = " + height); */
 				if (height >= 134) {
 					$('.nav').addClass('Fixed');
-				}
-				else{
+				} else {
 					$('.nav').removeClass('Fixed');
 				}
 			});
+
 			// 클릭시 해당 컨텐츠로 스크롤이동
-			$('#project').click(function (){
-				$("html").animate({
-					scrollTop: 305
+			var currenturl = $(location).attr('href');
+			$('#project').click(function() {
+				if(currenturl== "http://localhost:8081/web/" || currenturl=="http://localhost:8081/web/#home"){
+					$("html").animate({
+						scrollTop : 305
+					}, 500);
+				}
+				
+			});
+
+			$('#profile').click(function() {
+				if(currenturl== "http://localhost:8081/web/" || currenturl=="http://localhost:8081/web/#home"){
+					$("html").animate({
+					scrollTop : 132
 				}, 500);
+				}
+			});
+
+			$('#home').click(function() {
+				if(currenturl== "http://localhost:8081/web/" || currenturl=="http://localhost:8081/web/#home"){
+					
+				$("html").animate({
+					scrollTop : 0
+				}, 500);
+				}
 			});
 		});
 	</script>
