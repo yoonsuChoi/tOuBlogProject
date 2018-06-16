@@ -51,7 +51,7 @@
 	</form>
 </div>
 <div id="sendSMSs" class="send"
-	style="margin-left: 10%; margin-right: 10%; margin-top: 8%;">
+	>
 	<h5>
 		<b>SMS : :</b>
 	</h5>
